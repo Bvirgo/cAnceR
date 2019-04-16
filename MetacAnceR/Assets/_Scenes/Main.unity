@@ -648,7 +648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1020403910
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -709,8 +709,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1020403909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.2}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
@@ -849,8 +849,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6256ef7017557db42b492c5d2d96274c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ObjectGrabbedColor: {r: 0.58077425, g: 0.8581637, b: 0.9632353, a: 1}
-  ObjectHoverColor: {r: 0.24705881, g: 0.93125075, b: 0.9607843, a: 1}
+  ObjectGrabbedColor: {r: 0.627451, g: 0.8901961, b: 0.95686275, a: 1}
+  ObjectHoverColor: {r: 0.19607843, g: 0.8392157, b: 0.99215686, a: 1}
   ObjectIdleColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1413626473
 GameObject:
@@ -888,13 +888,21 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1549430992}
+  - component: {fileID: 1549430994}
+  - component: {fileID: 1549431001}
+  - component: {fileID: 1549430995}
+  - component: {fileID: 1549430996}
+  - component: {fileID: 1549430999}
+  - component: {fileID: 1549430998}
+  - component: {fileID: 1549430997}
+  - component: {fileID: 1549431000}
   m_Layer: 0
   m_Name: Human 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1549430992
 Transform:
   m_ObjectHideFlags: 0
@@ -909,6 +917,196 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!33 &1549430994
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Mesh: {fileID: 4300002, guid: 2dddf0c6025fe2f4baa6223a13ab715b, type: 3}
+--- !u!23 &1549430995
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &1549430996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45bd94a85c17ec4418225806a214312f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTransform: {fileID: 0}
+  _events:
+    _engaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _disengaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverStart:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverEnd:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!114 &1549430997
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 802fb631bf3d414478d36e2d114aed2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTransform: {fileID: 0}
+  _events:
+    _engaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _disengaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverStart:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverEnd:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+  _minSize: {x: 0.3, y: 0.3}
+  _maxSize: {x: 2, y: 2}
+  _scaleSizeDelta: 0
+  _scaleChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Meta.Vector3UnityEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _exponentialScaling: 0
+--- !u!114 &1549430998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea67a886b13fbff4395b0caf9c5a041f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetTransform: {fileID: 0}
+  _events:
+    _engaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _disengaged:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverStart:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+    _hoverEnd:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+--- !u!54 &1549430999
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 1
+  m_AngularDrag: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1549431000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6256ef7017557db42b492c5d2d96274c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObjectGrabbedColor: {r: 0.627451, g: 0.8901961, b: 0.95686275, a: 1}
+  ObjectHoverColor: {r: 0.19607843, g: 0.8392157, b: 0.99215686, a: 1}
+  ObjectIdleColor: {r: 0, g: 0, b: 0, a: 0}
+--- !u!65 &1549431001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1549430991}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.84, y: 4.24, z: 0.83}
+  m_Center: {x: 0, y: 2.06, z: 0.04}
 --- !u!1001 &1586965729
 Prefab:
   m_ObjectHideFlags: 0
