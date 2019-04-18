@@ -788,7 +788,7 @@ GameObject:
   - component: {fileID: 969704288}
   - component: {fileID: 969704290}
   m_Layer: 0
-  m_Name: Cubes
+  m_Name: Helping Cubes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -807,7 +807,7 @@ Transform:
   - {fileID: 1790620280}
   - {fileID: 1689578903}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &969704286
 MonoBehaviour:
@@ -1353,7 +1353,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1706377665}
   m_Layer: 0
-  m_Name: Human 3
+  m_Name: Own Human
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1376,7 +1376,7 @@ Transform:
   - {fileID: 581636932}
   - {fileID: 1644700190}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1790620279
 GameObject:
