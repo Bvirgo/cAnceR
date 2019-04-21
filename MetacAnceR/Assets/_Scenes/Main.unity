@@ -1203,10 +1203,10 @@ Prefab:
     - target: {fileID: 11427616, guid: fdb5898ad7057ef4598a139448b5c4bc, type: 2}
       propertyPath: HtmlFile
       value: 
-      objectReference: {fileID: 4900000, guid: bc8859fa101e95f44a3d6395670adf2a, type: 3}
+      objectReference: {fileID: 4900000, guid: a11fdad1831383841930411c79ca68fb, type: 3}
     - target: {fileID: 11427616, guid: fdb5898ad7057ef4598a139448b5c4bc, type: 2}
       propertyPath: HtmlFilePath
-      value: Assets/PowerUI/Examples (Remove On Publish)/4. In World UI/Screen.html
+      value: Assets/_Visualizations/MyNewHtml.html
       objectReference: {fileID: 0}
     - target: {fileID: 400004, guid: fdb5898ad7057ef4598a139448b5c4bc, type: 2}
       propertyPath: m_LocalScale.x
