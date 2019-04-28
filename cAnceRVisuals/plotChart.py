@@ -9,6 +9,8 @@ import numpy as np
 from bokeh.plotting import figure, output_file, show
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import Range1d
+from bokeh.models import HoverTool
+
 
 #open .csv file
 with open('age_data.csv') as csvfile:
@@ -32,7 +34,7 @@ with open('age_data.csv') as csvfile:
             m=float(row[0].split(";")[12])
             n=float(row[0].split(";")[13])
             o=float(row[0].split(";")[14])
-            p=float(row[0].split(";")[15])
+            x=float(row[0].split(";")[15])
             q=float(row[0].split(";")[16])
             r=float(row[0].split(";")[17])
             a=float(row[0].split(";")[18])
@@ -42,7 +44,13 @@ with open('age_data.csv') as csvfile:
             p = figure(plot_width=900, plot_height=400, x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
             # set a range using a Range1d
             p.y_range = Range1d(0, 350)            
-            p.circle([0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], [b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, a], size=10)
+            p.circle([0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], [b, c, d, e, f, g, h, i, j, k, l, m, n, o, x, q, r, a], size=10)
+            # Format the tooltip
+            tooltips = [
+                ("value", " @y")
+            ]
+            # Add the HoverTool to the figure
+            p.add_tools(HoverTool(tooltips=tooltips))
             show(p)
             line_count = line_count + 1
         else:
