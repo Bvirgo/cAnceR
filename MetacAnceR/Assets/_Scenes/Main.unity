@@ -1254,6 +1254,36 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f29804ebd89fa1409e93097cbff1a1d, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1651696291 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000010685245716, guid: 0f29804ebd89fa1409e93097cbff1a1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1651696290}
+--- !u!20 &1651696292 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20000012647723092, guid: 0f29804ebd89fa1409e93097cbff1a1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1651696290}
+--- !u!20 &1651696293 stripped
+Camera:
+  m_PrefabParentObject: {fileID: 20000013518351888, guid: 0f29804ebd89fa1409e93097cbff1a1d,
+    type: 2}
+  m_PrefabInternal: {fileID: 1651696290}
+--- !u!114 &1651696294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651696291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01362964501d9184b9fbd723cc5b70de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _targetCameras:
+  - {fileID: 1651696293}
+  - {fileID: 1651696292}
+  _decorators: []
 --- !u!1 &1689578902
 GameObject:
   m_ObjectHideFlags: 0
