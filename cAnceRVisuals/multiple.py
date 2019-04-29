@@ -2,11 +2,12 @@ import matplotlib.pyplot as plt
 from numpy import pi, linspace, sin, cos, tan
 from bokeh.layouts import column
 from bokeh.models import ColumnDataSource
-
+from bokeh.layouts import gridplot
 
 #
 # Create the first diagram
 #
+
 #open .csv file
 with open('age_data.csv') as csvfile:
     readCSV = csv.reader(csvfile, delimiter=',')
@@ -49,11 +50,11 @@ with open('age_data.csv') as csvfile:
         else:
             line_count = line_count + 1
 
+
 #
 # Create the second diagram
 #
 
-#output_file("cAnceR_HeadCancers_Horizontal.html")
 dt = pd.read_excel('HeadCancersCopy.xlsx',usecols='A,B')
 dt2 = dt[::-1]
 names = dt2['Cancer']
@@ -67,21 +68,19 @@ fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='whit
 fig2.ygrid.grid_line_color = None
 fig2.x_range.start = 0
 fig2.x_range.end = 1150
-#show(p1)
-
 
 
 #
+# Create html file for diagrams
 #
-#
-
-
 
 output_file("multiple.html")
-#p = figure(plot_width=900, toolbar_location=None, plot_height=400, x_range=(["30-34", "80-84", "85+"]))
-# set a range using a Range1d
-#p.y_range = Range1d(0, 350)            
-#p.circle([0.5, 1.5, 17.5], [1, 2, 3], size=10)
 
+# Configure the gridplot to get the diagrams horisontally
+both_diagrams_gridplot = gridplot([[fig2, fig1]], 
+                              toolbar_location='right')
 
-show(column(fig2, fig1))
+# Plot the two visualizations in a horizontal configuration
+show(both_diagrams_gridplot)
+
+#show(row(fig2, fig1))
