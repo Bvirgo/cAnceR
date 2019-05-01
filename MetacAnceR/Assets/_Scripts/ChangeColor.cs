@@ -30,6 +30,5 @@ public class ChangeColor : MonoBehaviour
     {
         rend = gameObject.GetComponent<Renderer>();
         colorAtStartUp = rend.material.color;
-        Debug.Log(colorAtStartUp);
     }
 }
