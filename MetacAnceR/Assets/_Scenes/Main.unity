@@ -435,7 +435,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 615302715}
+      - m_Target: {fileID: 1886644559}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -618,7 +618,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &615302711
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1836,7 +1836,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.0998
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1844,7 +1844,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1884,11 +1884,44 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: _width
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: _height
+      value: 650
+      objectReference: {fileID: 0}
+    - target: {fileID: 114184653006013458, guid: 386844d22c1dfdb4baea57a96fbad4db,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114787856833515252, guid: 386844d22c1dfdb4baea57a96fbad4db,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1886644558 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+  m_PrefabInternal: {fileID: 1854375750}
+--- !u!114 &1886644559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886644558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 204608a4e925d7c42a861c39490c0575, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1951859852
 GameObject:
   m_ObjectHideFlags: 0
