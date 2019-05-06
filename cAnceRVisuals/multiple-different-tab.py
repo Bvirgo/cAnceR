@@ -1,8 +1,11 @@
+import csv
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import Range1d, HoverTool, ColumnDataSource, TapTool, CustomJS, OpenURL
+from bokeh.layouts import column, gridplot
 from numpy import pi, linspace, sin, cos, tan
-from bokeh.layouts import column
-from bokeh.models import ColumnDataSource, TapTool, OpenURL
-from bokeh.layouts import gridplot
 
 #
 # Create the first diagram. Scatter plot.
@@ -86,24 +89,3 @@ taptool.callback = OpenURL(url=url)
 
 # Plot the two visualizations in a horizontal configuration
 show(both_diagrams_gridplot)
-
-
-
-#show(row(fig2, fig1))
-
-#***tabbing multiple diagrams***#
-
-# Increase the plot widths
-#fig1.plot_width = fig2.plot_width = 800
-
-# Create two panels, one for each conference
-#east_panel = Panel(child=fig1, title='Eastern Conference')
-#west_panel = Panel(child=fig2, title='Western Conference')
-
-# Assign the panels to Tabs
-#tabs = Tabs(tabs=[west_panel, east_panel])
-
-# Show the tabbed layout
-#show(tabs)
-
-#***tabbing multiple diagrams***#
