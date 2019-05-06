@@ -1,11 +1,16 @@
+import csv
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import Range1d, HoverTool, ColumnDataSource, TapTool, CustomJS, OpenURL
+from bokeh.layouts import column, gridplot
 from numpy import pi, linspace, sin, cos, tan
-from bokeh.layouts import column
-from bokeh.models import ColumnDataSource
-from bokeh.layouts import gridplot
+
+
 
 #
-# Create the first diagram
+# Create the first diagram. Bar chart.
 #
 
 #open .csv file
@@ -51,8 +56,9 @@ with open('age_data.csv') as csvfile:
             line_count = line_count + 1
 
 
+
 #
-# Create the second diagram
+# Create the second diagram. Scatter plot.
 #
 
 dt = pd.read_excel('HeadCancersCopy.xlsx',usecols='A,B')
@@ -63,11 +69,12 @@ counts = dt2['Number']
 counts.max()
 source = ColumnDataSource(data=dict(names=dt2['Cancer'], counts=dt2['Number']))
 
-fig2 = figure(plot_width=600, plot_height=600, y_range=names, toolbar_location=None, title="Head Cancers")
+fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head Cancers")
 fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkturquoise')
 fig2.ygrid.grid_line_color = None
 fig2.x_range.start = 0
 fig2.x_range.end = 1150
+
 
 
 #
@@ -77,10 +84,7 @@ fig2.x_range.end = 1150
 output_file("multiple.html")
 
 # Configure the gridplot to get the diagrams horisontally
-both_diagrams_gridplot = gridplot([[fig2, fig1]], 
-                              toolbar_location='right')
+both_diagrams_gridplot = gridplot([[fig2, fig1]], toolbar_location='right')
 
 # Plot the two visualizations in a horizontal configuration
 show(both_diagrams_gridplot)
-
-#show(row(fig2, fig1))
