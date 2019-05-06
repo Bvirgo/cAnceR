@@ -41,7 +41,7 @@ with open('age_data.csv') as csvfile:
             a=float(row[0].split(";")[18])
             
             # create a new plot with a range set with a tuple
-            fig1 = figure(plot_width=900, toolbar_location=None, plot_height=400, x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
+            fig1 = figure(plot_width=900, toolbar_location=None, plot_height=400, title=row[0].split(";")[0], x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
             # set a range using a Range1d
             fig1.y_range = Range1d(0, 350)            
             fig1.circle([0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], [b, c, d, e, f, g, h, i, j, k, l, m, n, o, x, q, r, a], size=10)
