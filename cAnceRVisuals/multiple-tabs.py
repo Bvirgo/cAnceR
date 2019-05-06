@@ -1,8 +1,16 @@
+import csv
+import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from bokeh.plotting import figure, output_file, show
+from bokeh.models import Range1d
+from bokeh.models import HoverTool
 from numpy import pi, linspace, sin, cos, tan
 from bokeh.layouts import column
 from bokeh.models import ColumnDataSource
 from bokeh.layouts import gridplot
+from bokeh.io import output_file
+from bokeh.models.widgets import Tabs, Panel
 
 #
 # Create the first diagram. Scatter plot.
@@ -94,4 +102,3 @@ tabs = Tabs(tabs=[west_panel, east_panel])
 
 # Show the tabbed layout
 show(tabs)
-
