@@ -1,8 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Apr 10 14:23:45 2019
-"""
-
 import csv
 import pandas as pd
 import numpy as np
@@ -19,7 +14,7 @@ with open('age_data.csv') as csvfile:
     for row in readCSV:
         #here we check only the line with the wanted cancer type
         if (line_count == 1):
-            #here we create the plot chart with wanted cancer type and the right values.
+            #here we create the plot chart with wanted cancer type and the right values.            
             b=float(row[0].split(";")[1])
             c=float(row[0].split(";")[2])
             d=float(row[0].split(";")[3])
@@ -41,9 +36,21 @@ with open('age_data.csv') as csvfile:
                 
             output_file("Adrenal_gland.html")
             # create a new plot with a range set with a tuple
-            p = figure(plot_width=900, plot_height=400, x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
+            p = figure(plot_width=900, toolbar_location=None, title=row[0].split(";")[0], plot_height=400, x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
+            
+            # Here we check the y-axis value
+            temp = 0
+            z = 1                
+            while z < 18:
+                if(temp >= float(row[0].split(";")[z])):
+                    temp = temp
+                    z = z+1
+                else:
+                    temp = float(row[0].split(";")[z])
+            
+            yValue = temp + 10
             # set a range using a Range1d
-            p.y_range = Range1d(0, 350)            
+            p.y_range = Range1d(0, yValue)            
             p.circle([0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], [b, c, d, e, f, g, h, i, j, k, l, m, n, o, x, q, r, a], size=10)
             # Format the tooltip
             tooltips = [
