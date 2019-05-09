@@ -1566,6 +1566,48 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1689578902}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1692361078
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4485289502146600, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 7c3f45bc4a849714aac61c8e48ea1c59, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &1706377664
 GameObject:
   m_ObjectHideFlags: 0
@@ -1880,7 +1922,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _url
-      value: https://areee.github.io/cAnceR/headtest.html
+      value: https://yle.fi/
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
@@ -1897,20 +1939,24 @@ Prefab:
     - target: {fileID: 114184653006013458, guid: 386844d22c1dfdb4baea57a96fbad4db,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114787856833515252, guid: 386844d22c1dfdb4baea57a96fbad4db,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1854375751 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+  m_PrefabInternal: {fileID: 1854375750}
 --- !u!1 &1886644558 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
@@ -1926,6 +1972,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204608a4e925d7c42a861c39490c0575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1886644560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1886644558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dce210b15b3696a4ba19d5f7b54dea9b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _translateTransform: {fileID: 1854375751}
+  _depthScrollIncrement: 0.08
+  _maxCameraDistance: 1.5
+  _lookAtYOnDrag: 1
+  _button: 0
+  _notPressedKeys: {fileID: 11400000, guid: 9bffe1e5db5262542a7eaee2f29a0132, type: 2}
+  _pointerDown:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _pointerUp:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _pointerEnter:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  _pointerExit:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!1 &1951859852
 GameObject:
   m_ObjectHideFlags: 0
