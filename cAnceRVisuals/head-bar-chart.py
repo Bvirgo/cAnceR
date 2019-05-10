@@ -15,7 +15,18 @@ counts.max()
 source = ColumnDataSource(data=dict(
         names=dt2['Cancer'], 
         counts=dt2['Number'], 
-        website=["https://yle.fi/uutiset", "https://areena.yle.fi/tv", "https://yle.fi/urheilu", "https://yle.fi/saa/", "https://yle.fi/saa/artikkelit/", "https://yle.fi/uutiset/3-8045550", "https://yle.fi/uutiset/tuoreimmat", "https://yle.fi/uutiset/18-220306", "https://yle.fi/uutiset/18-204933", "https://yle.fi/uutiset/18-34953", "https://yle.fi/uutiset/18-34837", "https://vastuullistajournalismia.fi/"]
+        website=["https://areee.github.io/cAnceR/visualisoinnit/tongue.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/thyroidgland.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/salivaryglands.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/nasopharynx.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/nasalcavityandsinuses.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/mouth.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/liporalcavityandpharynx.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/lip.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/larynx.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/hodgkinslymphoma.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/eyeandadnexa.html", 
+                 "https://areee.github.io/cAnceR/visualisoinnit/brainandotherCNS.html"]
         ))
 
 fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head Cancers")
