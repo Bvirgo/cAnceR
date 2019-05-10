@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import Range1d, HoverTool, ColumnDataSource, TapTool, CustomJS, OpenURL
 from bokeh.layouts import column, gridplot
+from bokeh.events import Tap
 from numpy import pi, linspace, sin, cos, tan
 
 
@@ -41,7 +42,7 @@ with open('age_data.csv') as csvfile:
             a=float(row[0].split(";")[18])
             
             # create a new plot with a range set with a tuple
-            fig1 = figure(plot_width=900, toolbar_location=None, plot_height=400, title=row[0].split(";")[0], x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
+            fig1 = figure(plot_width=900, toolbar_location=None, title=row[0].split(";")[0], plot_height=400, x_range=(["0-4", "5-9", "10-14", "15-19", "20-24", "25-29", "30-34", "35-39", "40-44", "45-49", "50-54", "55-59", "60-64", "65-69", "70-74", "75-79", "80-84", "85+"]))
             # set a range using a Range1d
             fig1.y_range = Range1d(0, 350)            
             fig1.circle([0.5, 1.5, 2.5, 3.5, 4.5, 5.5, 6.5, 7.5, 8.5, 9.5, 10.5, 11.5, 12.5, 13.5, 14.5, 15.5, 16.5, 17.5], [b, c, d, e, f, g, h, i, j, k, l, m, n, o, x, q, r, a], size=10)
@@ -67,13 +68,22 @@ names = dt2['Cancer']
 names[11]
 counts = dt2['Number']
 counts.max()
-source = ColumnDataSource(data=dict(names=dt2['Cancer'], counts=dt2['Number']))
+source = ColumnDataSource(data=dict(
+        names=dt2['Cancer'], 
+        counts=dt2['Number'], 
+        website=["https://yle.fi/uutiset", "https://areena.yle.fi/tv", "https://yle.fi/urheilu", "https://yle.fi/saa/", "https://yle.fi/saa/artikkelit/", "https://yle.fi/uutiset/3-8045550", "https://yle.fi/uutiset/tuoreimmat", "https://yle.fi/uutiset/18-220306", "https://yle.fi/uutiset/18-204933", "https://yle.fi/uutiset/18-34953", "https://yle.fi/uutiset/18-34837", "https://vastuullistajournalismia.fi/"]
+        ))
 
 fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head Cancers")
 fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkturquoise')
 fig2.ygrid.grid_line_color = None
 fig2.x_range.start = 0
 fig2.x_range.end = 1150
+fig2.add_tools(TapTool())
+
+url = "@website"
+taptool = fig2.select(type=TapTool)
+taptool.callback = OpenURL(url=url)
 
 
 
