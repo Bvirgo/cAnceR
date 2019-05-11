@@ -1156,6 +1156,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
+--- !u!1001 &502944279
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.2279
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_Name
+      value: Cloud Browser (Mouse)
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: _url
+      value: https://areee.github.io/cAnceR/visualisoinnit/sizeTestSVG.html
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: _width
+      value: 750
+      objectReference: {fileID: 0}
+    - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: _height
+      value: 750
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &514283927
 GameObject:
   m_ObjectHideFlags: 0
@@ -1680,75 +1750,6 @@ CapsuleCollider:
   m_Height: 4.099393
   m_Direction: 1
   m_Center: {x: 0, y: 2.0768604, z: 0.0761015}
---- !u!1001 &761270086
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -0.1383
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.0595
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_RootOrder
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4396931297480078, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-      propertyPath: m_LocalScale.z
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114779281905108290, guid: e003a9e94cb96184d9eb8d8fb5733a32,
-        type: 2}
-      propertyPath: _url
-      value: https://areee.github.io/cAnceR/visualisoinnit/sizeTest1.html
-      objectReference: {fileID: 0}
-    - target: {fileID: 114779281905108290, guid: e003a9e94cb96184d9eb8d8fb5733a32,
-        type: 2}
-      propertyPath: _width
-      value: 750
-      objectReference: {fileID: 0}
-    - target: {fileID: 114779281905108290, guid: e003a9e94cb96184d9eb8d8fb5733a32,
-        type: 2}
-      propertyPath: _height
-      value: 750
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: e003a9e94cb96184d9eb8d8fb5733a32, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &819295431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4585,7 +4586,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _url
-      value: https://yle.fi/
+      value: https://areee.github.io/cAnceR/headtest.html
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
@@ -4611,15 +4612,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
+      propertyPath: m_Name
+      value: Head Browser (Mouse)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
   m_IsPrefabParent: 0
---- !u!4 &1854375751 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
-  m_PrefabInternal: {fileID: 1854375750}
 --- !u!1 &1886644558 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
@@ -4635,43 +4636,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 204608a4e925d7c42a861c39490c0575, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1886644560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1886644558}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dce210b15b3696a4ba19d5f7b54dea9b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _translateTransform: {fileID: 1854375751}
-  _depthScrollIncrement: 0.08
-  _maxCameraDistance: 1.5
-  _lookAtYOnDrag: 1
-  _button: 0
-  _notPressedKeys: {fileID: 11400000, guid: 9bffe1e5db5262542a7eaee2f29a0132, type: 2}
-  _pointerDown:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  _pointerUp:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  _pointerEnter:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  _pointerExit:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: Meta.MetaInteractionDataEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
 --- !u!1 &1897923713
 GameObject:
   m_ObjectHideFlags: 0
