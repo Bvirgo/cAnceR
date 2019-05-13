@@ -122,7 +122,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.0884
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1101,7 +1101,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 180570, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Name
@@ -1796,8 +1796,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1854375751}
   - {fileID: 502944280}
+  - {fileID: 1854375751}
   - {fileID: 875710344}
   - {fileID: 95292315}
   m_Father: {fileID: 0}
@@ -2213,11 +2213,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.118
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.0675
+      value: -0.091
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalPosition.z
@@ -2269,7 +2269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _height
-      value: 650
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 114184653006013458, guid: 386844d22c1dfdb4baea57a96fbad4db,
         type: 2}
@@ -3862,7 +3862,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_RootOrder
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 478616, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_LocalScale.x
