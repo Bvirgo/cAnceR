@@ -166,7 +166,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _url
-      value: https://areee.github.io/cAnceR/headtest.html
+      value: https://areee.github.io/cAnceR/other-bar-chart.html
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
@@ -2257,7 +2257,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _url
-      value: https://areee.github.io/cAnceR/headtest.html
+      value: https://areee.github.io/cAnceR/torso-bar-chart.html
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
@@ -3878,7 +3878,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11491030, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: _url
-      value: https://areee.github.io/cAnceR/headtest.html
+      value: https://areee.github.io/cAnceR/head-bar-chart.html
       objectReference: {fileID: 0}
     - target: {fileID: 2381306, guid: 386844d22c1dfdb4baea57a96fbad4db, type: 2}
       propertyPath: m_Enabled
