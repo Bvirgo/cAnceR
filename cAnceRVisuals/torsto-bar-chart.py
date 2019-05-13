@@ -45,7 +45,7 @@ source = ColumnDataSource(data=dict(
                  "https://areee.github.io/cAnceR/visualisoinnit/Adrenal_gland.html"]
         ))
 
-fig = figure(plot_width=600, plot_height=750, y_range=names, tools="pan, tap", title="Torso Cancers")
+fig = figure(plot_width=600, plot_height=750, y_range=names, tools="pan, tap", toolabar_location=None, title="Torso Cancers")
 fig.hbar(y='names', right='counts', height=0.8, source=source, line_color='white', legend=None, fill_color='blue')
 fig.ygrid.grid_line_color = None
 fig.x_range.start = 0
