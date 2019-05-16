@@ -29,7 +29,7 @@ source = ColumnDataSource(data=dict(
                  "https://areee.github.io/cAnceR/visualisoinnit/brainandotherCNS.html"]
         ))
 
-fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head Cancers")
+fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head area Cancers")
 fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkturquoise')
 fig2.ygrid.grid_line_color = None
 fig2.x_range.start = 0
