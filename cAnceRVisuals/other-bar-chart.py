@@ -26,7 +26,7 @@ source = ColumnDataSource(data=dict(
                  "https://areee.github.io/cAnceR/visualisoinnit/bonesandjoints.html"]
         ))
 
-fig = figure(y_range=names, tools="pan, tap", toolbar_location=None, title="Other Cancers")
+fig = figure(y_range=names, tools="pan, tap", toolbar_location=None, title="Cancers in other body parts")
 fig.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkblue')
 fig.ygrid.grid_line_color = None
 fig.x_range.start = 0
