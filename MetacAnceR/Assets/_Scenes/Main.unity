@@ -299,6 +299,7 @@ GameObject:
   - component: {fileID: 108709086}
   - component: {fileID: 108709085}
   - component: {fileID: 108709084}
+  - component: {fileID: 108709088}
   m_Layer: 5
   m_Name: Torso Canvas
   m_TagString: Untagged
@@ -384,6 +385,17 @@ RectTransform:
   m_AnchoredPosition: {x: -0.284, y: 0}
   m_SizeDelta: {x: 950, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &108709088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 108709083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21906c660245d2746a447f8f2eca6fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &141845037
 GameObject:
   m_ObjectHideFlags: 0
@@ -654,7 +666,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95292314}
+      - m_Target: {fileID: 1576399892}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -1632,7 +1644,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1886644559}
+      - m_Target: {fileID: 355137091}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -1862,7 +1874,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95292314}
+      - m_Target: {fileID: 1576399892}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -3455,7 +3467,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95292314}
+      - m_Target: {fileID: 1576399892}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -4093,7 +4105,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1000011859835720, guid: 0f29804ebd89fa1409e93097cbff1a1d, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0f29804ebd89fa1409e93097cbff1a1d, type: 2}
@@ -4217,7 +4229,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 875710343}
+      - m_Target: {fileID: 108709088}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
@@ -4518,6 +4530,7 @@ GameObject:
   - component: {fileID: 1576399890}
   - component: {fileID: 1576399889}
   - component: {fileID: 1576399888}
+  - component: {fileID: 1576399892}
   m_Layer: 5
   m_Name: Other Canvas
   m_TagString: Untagged
@@ -4603,6 +4616,17 @@ RectTransform:
   m_AnchoredPosition: {x: 0.696, y: 0}
   m_SizeDelta: {x: 950, y: 800}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1576399892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1576399887}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21906c660245d2746a447f8f2eca6fe3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1586965729
 Prefab:
   m_ObjectHideFlags: 0
@@ -4909,7 +4933,7 @@ MonoBehaviour:
   _handFeatureEnterEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 95292314}
+      - m_Target: {fileID: 1576399892}
         m_MethodName: ToggleVisibility
         m_Mode: 1
         m_Arguments:
