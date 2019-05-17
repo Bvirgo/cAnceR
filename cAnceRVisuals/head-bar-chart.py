@@ -1,6 +1,6 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show
-from bokeh.models import ColumnDataSource, TapTool, OpenURL
+from bokeh.models import ColumnDataSource, TapTool, OpenURL, HoverTool
 
 #
 # Create a scatter plot diagram 
@@ -30,7 +30,7 @@ source = ColumnDataSource(data=dict(
         ))
 
 fig2 = figure(plot_width=600, plot_height=600, y_range=names, tools="tap", toolbar_location=None, title="Head area Cancers")
-fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkturquoise')
+fig2.hbar(y='names', right='counts', height=0.5, source=source, line_color='white', legend=None, fill_color='darkturquoise', hover_line_color='black')
 fig2.ygrid.grid_line_color = None
 fig2.x_range.start = 0
 fig2.x_range.end = 1150
@@ -39,7 +39,8 @@ url = "@website"
 taptool = fig2.select(type=TapTool)
 taptool.callback = OpenURL(url=url)
 
-
+# Format the tooltip
+fig2.add_tools(HoverTool(tooltips=None))
 
 #
 # Create html file for diagram
