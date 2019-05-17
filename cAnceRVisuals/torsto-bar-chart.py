@@ -1,6 +1,6 @@
 import pandas as pd
 from bokeh.plotting import figure, output_file, show
-from bokeh.models import ColumnDataSource, TapTool, OpenURL
+from bokeh.models import ColumnDataSource, TapTool, OpenURL, HoverTool
 
 dt = pd.read_excel('TorsoCancers.xlsx',usecols='A,B')
 dt2 = dt[::-1]
@@ -54,6 +54,9 @@ fig.x_range.end = 7500
 url = "@website"
 taptool = fig.select(type=TapTool)
 taptool.callback = OpenURL(url=url)
+
+# Format the tooltip
+fig2.add_tools(HoverTool(tooltips=None))
 
 
 #
