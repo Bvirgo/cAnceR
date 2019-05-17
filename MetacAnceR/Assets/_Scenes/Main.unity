@@ -2301,6 +2301,7 @@ GameObject:
   - component: {fileID: 765733411}
   - component: {fileID: 765733410}
   - component: {fileID: 765733409}
+  - component: {fileID: 765733413}
   m_Layer: 0
   m_Name: Cloud Camera
   m_TagString: Untagged
@@ -2371,6 +2372,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &765733413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 765733408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71e3673fc70b19e4ba6a463c1c5fd7c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1
 --- !u!1 &809836587
 GameObject:
   m_ObjectHideFlags: 0
