@@ -10,7 +10,7 @@ Tampere University.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 ### Prerequisites
 
@@ -35,10 +35,16 @@ You need these things to install our software:
 ### Installing
 
 - Download Meta 2 SDK from [Metavision's website](https://www.metavision.com/)
-- Download our repository as [ZIP](https://github.com/areee/cAnceR/archive/master.zip)
+- Download this repository as [ZIP](https://github.com/areee/cAnceR/archive/master.zip)
 - Open MetacAnceR project folder in Unity
 - Plug in Meta glasses and wait until the fan is silencing
 - Press the play button to run the AR environment
+
+## What is included in this repository?
+
+- ``MetacAnceR`` – Unity project folder
+- ``cAnceRVisuals`` – Python files for generating Bokeh visualizations
+- ``docs`` – published HTML visualizations
 
 ## Team 
 
