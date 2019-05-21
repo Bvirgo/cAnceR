@@ -1,21 +1,42 @@
-
+![logo of the cancer project](https://raw.githubusercontent.com/areee/cAnceR/master/cAnceR-icon.png)
 
 # cAnceR
 
 Showing cancer types visualized by augmented reality
 
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+Information Visualization & Interactive techniques course project work.
+
+Tampere University.
+
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
+
+You need these things to install our software:
+
+- Meta 2 – Augmented Reality Glasses
+- A very powerful gaming computer (see [Minimum System Requirements](#Header3))
+- The latest Meta 2 SDK
+
+### Minimum System Requirements
+
+- OS: Windows 10 (64 bit)
+- Processor: Intel Core i7 6700 Processor or AMD FX 9590, or better
+- Memory: 16 GB RAM DDR4 or more
+- Graphics: NVIDIA GeForce GTX 1050 TI or AMD Radeon RX 480 or better
+  - Please Note: AMD is only supported in Extended Mode, not in Direct Mode
+- Free Hard Drive space: 10 GB
+- Video Output: 1x HDMI 1.4b port
+- USB: 1x USB 3.0 port
 
 
+## Team 
 
-
-
-
-Information Visualization + Interactive techniques project
-
-Tampere University
-
-(c) Hanna-Riikka Rantamaa & Arttu Ylhävuori
+| <a href="https://github.com/areee" target="_blank">**Arttu Ylhävuori**</a>|  <a href="https://github.com/hhanna12" target="_blank">**Hanna-Riikka Rantamaa**</a>|
+|:-------------:|:-------------:|
+| [![Arttu's avatar](https://avatars2.githubusercontent.com/u/10089872?v=4&s=200)](https://github.com/areee)    | [![Hanna's avatar](https://avatars2.githubusercontent.com/u/32436932?s=200&v=4)](https://github.com/hhanna12) |
 
 ## License
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
