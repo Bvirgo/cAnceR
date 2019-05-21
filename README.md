@@ -34,7 +34,7 @@ You need these things to install our software:
 
 - Download Meta 2 SDK from [Metavision's website](https://www.metavision.com/)
 - Download this repository as [ZIP](https://github.com/areee/cAnceR/archive/master.zip)
-- Unzip the file and open ``MetacAnceR`` project folder in Unity
+- Extract the zip file and open ``MetacAnceR`` project folder in Unity
 - Plug in Meta glasses and wait until the fan is silencing
 - Press the play button to run the AR environment
 - Wait until the Meta glasses have initialized themselves and the mapping is ready (mapping may be run twice in the beginning)
