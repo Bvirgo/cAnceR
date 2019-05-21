@@ -4,7 +4,7 @@
 
 > Showing cancer types visualized by augmented reality
 
-Information Visualization & Interactive techniques course project work at Tampere University
+Information Visualization & Interactive techniques course project work at Tampere University, Finland
 
 ## Getting Started
 
