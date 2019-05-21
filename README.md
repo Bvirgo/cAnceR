@@ -17,7 +17,7 @@ These instructions will get you a copy of the project up and running on your loc
 You need these things to install our software:
 
 - Meta 2 – Augmented Reality Glasses
-- A very powerful gaming computer (see [Minimum System Requirements](#Header3))
+- A very powerful gaming computer (see [Minimum System Requirements](#minimum-system-requirements))
 - The latest Meta 2 SDK
 
 ### Minimum System Requirements
@@ -30,6 +30,11 @@ You need these things to install our software:
 - Free Hard Drive space: 10 GB
 - Video Output: 1x HDMI 1.4b port
 - USB: 1x USB 3.0 port
+
+### How to install
+
+- Download Meta 2 SDK from [Metavision's website](https://www.metavision.com/)
+- Download this repository
 
 
 ## Team 
