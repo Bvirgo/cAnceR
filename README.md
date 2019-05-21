@@ -37,6 +37,7 @@ You need these things to install our software:
 - Open ``MetacAnceR`` project folder in Unity
 - Plug in Meta glasses and wait until the fan is silencing
 - Press the play button to run the AR environment
+- Wait until the Meta glasses have initialized themselves and the mapping is ready (mapping may be run twice in the beginning)
 
 ## What is included in this repository?
 
