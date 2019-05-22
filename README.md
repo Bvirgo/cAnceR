@@ -18,6 +18,7 @@ You need these things to install our software:
 - A very powerful gaming computer (see [Minimum System Requirements](#minimum-system-requirements))
 - The latest Meta 2 SDK
 - Unity development platform, version 2017.3.0f3 (e.g. via Unity Hub)
+- _(Optional)_ Visual Studio 2017 or newer – for coding scripts
 
 ### Minimum System Requirements
 
