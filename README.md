@@ -63,9 +63,9 @@ Put your hand on the near side of the mainikin and angle your wrist so that the 
 while these objects remain stationary
 
 ### Keyboard of the computer
-- The visualization camera can be moved with the arrow keys (along the x and y 
-axes), to zoom in and out of the objects with the A and S keys (along the z 
-axis), and to rotate the view with the Q and W keys
+- The visualization camera can be moved with the <kbd>→</kbd>,<kbd>←</kbd>,<kbd>↑</kbd> and <kbd>↓</kbd> (along the x and y 
+axes), to zoom in and out of the objects with the <kbd>A</kbd> and <kbd>S</kbd> keys (along the z 
+axis), and to rotate the view with the <kbd>Q</kbd> and <kbd>W</kbd> keys
 
 ### Mouse of the computer
 - Bar chart points can be clicked and seen as a scatter plot for age variance 
