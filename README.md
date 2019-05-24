@@ -42,6 +42,9 @@ You need these things to install our software:
 
 ## How to use it
 
+![a typical view of the cancer environment](https://raw.githubusercontent.com/areee/cAnceR/master/cAnceR-environment.png)
+_Image 1: A view of the cAnceR environment when all body parts are selected and all graphs are visible._
+
 ### Hand interactions
 
 Put your hand on the near side of the mainikin and angle your wrist so that the back of your hand is parallel to your face. Now put your hand up to the edge of the manikin and observe the visual change to the status indicator floating on the back of your hand. Finally, gently make a closed fist. An audio cue will play to indicate a successful grab.
