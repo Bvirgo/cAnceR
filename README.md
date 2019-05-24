@@ -40,7 +40,35 @@ You need these things to install our software:
 - Press the play button to run the AR environment
 - Wait until the Meta glasses have initialized themselves and the mapping is ready (mapping may be run twice in the beginning)
 
-## What is included in this repository?
+## How to use it
+
+### Hand interactions
+
+Put your hand on the near side of the mainikin and angle your wrist so that the back of your hand is parallel to your face. Now put your hand up to the edge of the manikin and observe the visual change to the status indicator floating on the back of your hand. Finally, gently make a closed fist. An audio cue will play to indicate a successful grab.
+
+**Two-handed hand gestures**
+- The manikin can be turned
+- Its size can be changed
+
+**One-handed hand gestures**
+- The manikin can be moved
+- Its body part can be selected by pointing the necessary body part
+  - The graph of the desired body part can be seen and hidden
+
+### Viewing objects with Meta glasses
+- The person using the glasses can move closer to the manikin and the graphs 
+while these objects remain stationary
+
+### Keyboard of the computer
+- The visualization camera can be moved with the arrow keys (along the x and y 
+axes), to zoom in and out of the objects with the A and S keys (along the z 
+axis), and to rotate the view with the Q and W keys
+
+### Mouse of the computer
+- Bar chart points can be clicked and seen as a scatter plot for age variance 
+associated with selected cancer type
+
+## What is included in this repository
 
 - ``MetacAnceR`` – Unity project folder
 - ``cAnceRVisuals`` – Python files for generating Bokeh visualizations
